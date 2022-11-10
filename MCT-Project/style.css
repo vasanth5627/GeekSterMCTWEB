@@ -11,6 +11,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /*header*/
 
 button{
@@ -22,10 +26,13 @@ button{
     /* border: 1px solid red; */
     position: relative;
     margin-bottom: 0;
+
    
     
    
 }
+
+
 /*nav*/
 
 
@@ -46,7 +53,7 @@ nav{
     background-color: #F77E53;
     border-radius: 19px;
     width: 38px;
-    height: 38px;
+    height: auto;
     text-align: center;
     
 }
@@ -73,7 +80,7 @@ nav{
     display: inline-block;
     font-family: 'inter', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: auto;
     line-height: 18.15px;
     color: #030303;
     margin-top: 2%;
@@ -118,8 +125,8 @@ nav{
 }
 
 .content .left h1{
-    width: 521px;
-    height:216px;
+    width: 70%;
+    height:auto;
     font-family: 'inter',sans-serif;
     font-weight: 700px;
     font-size: 60px;
@@ -143,7 +150,7 @@ nav{
     font-family: 'inter',sans-serif;
     font-weight: 600;
     font-size:18px;
-    width: 200px;
+    width: 30%;
     height:62px;
     border-radius: 16px;
     border: none;
@@ -164,7 +171,7 @@ nav{
 .img img{
     position: relative;
     bottom:10px;
-    width: 452px;
+    width:  auto;
     height: 560px;
     left: -50px;
     
@@ -215,6 +222,104 @@ nav{
     margin-bottom: -300px;
     z-index: -1;
     
+}
+
+@media (max-width:860px){
+    *{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .right{
+      width: 30%;
+    }
+    .left{
+        width: 100%;
+        margin-right: 5%;
+        padding-right: 0;
+    }
+
+    .left h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .list{
+        display: none;
+    }
+
+    .right .count{
+        display: none;
+    }
+    .content{
+       flex-direction: column;
+       margin-top: 10%;
+    }
+
+  .univ .num {
+    display: none ;
+  }
+
+  .univ img{
+    display: none;
+  }
+  
+
+  .school{
+    flex-direction: column;
+  }
+  .works .course{
+    flex-direction: column;
+  }
+
+  .works button{
+    margin-bottom: 5%;
+  }
+  .transform{
+    flex-direction: column;
+    margin-bottom: 15%;
+  }
+
+  .review .top1 img{
+    display: none;
+  }
+
+  .review .rev{
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  .review .rev img{
+    margin-bottom: 5%;
+  }
+
+
+  .price .cards{
+    flex-direction: column;
+   
+  }
+
+  .price .cards .fcard{
+    margin-bottom: 5%;
+  }
+
+  .footer{
+   flex-direction: column;
+  }
+
+  .work .one{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work .two{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .work p{
+    margin-bottom: 5%;
+  }
+
 }
 
 /*univ*/
