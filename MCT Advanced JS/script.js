@@ -27,12 +27,14 @@ const showWeather= (data)=>{
             <div>
                 <h2>${data.main.temp} ℃</h2>
                 <h4>${data.weather[0].main}</h4>
+                <h4>${data.name}</h4>
             </div>
     `
 }
 
 form.addEventListener('submit',function(event){
     getWeather(search.value)
+    search.value='';
     event.preventDefault();
 })
 
